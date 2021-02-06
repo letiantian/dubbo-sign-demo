@@ -1,0 +1,15 @@
+**/.DS_Store
+**/.idea
+**/.gradle
+**/gradle
+**/gradlew
+**/gradlew.bat
+**/target
+**/build
+**/*.iml
+**/out
+**/.classpath
+**/.project
+**/.settings
+**/bin
+**/zookeeper.out

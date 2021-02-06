@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation "com.google.guava:guava:30.1-jre"
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.0.11.Final'
+    implementation group: 'org.glassfish', name: 'javax.el', version: '3.0.1-b09'
+    implementation "org.apache.dubbo:dubbo:2.7.1"
+    implementation "org.apache.dubbo:dubbo-dependencies-zookeeper:2.7.1"
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
