@@ -1,5 +1,6 @@
 # Dubbo 签名实现
 
+-> [一个简单可靠的 Dubbo 请求/响应数据签名方案](https://www.letianbiji.com/ds/a-simple-reliable-dubbo-sign-scheme.html)
 
 ## 测试步骤
 
